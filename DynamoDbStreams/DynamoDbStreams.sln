@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{195B2DFA-9532-4083-82B6-A4F4B62BBA33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{013BE91A-8C6B-4894-836C-2DF8806993FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalog.Api", "src\ProductCatalog.Api\ProductCatalog.Api.csproj", "{ABFEFD65-1B59-4DC6-A7F1-A23C1375C767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogCacheSync.Lambda", "src\ProductCatalogCacheSync.Lambda\ProductCatalogCacheSync.Lambda.csproj", "{AC7EDA51-D236-47D1-84D8-8038285AE666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABFEFD65-1B59-4DC6-A7F1-A23C1375C767} = {195B2DFA-9532-4083-82B6-A4F4B62BBA33}
+		{AC7EDA51-D236-47D1-84D8-8038285AE666} = {195B2DFA-9532-4083-82B6-A4F4B62BBA33}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFEFD65-1B59-4DC6-A7F1-A23C1375C767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFEFD65-1B59-4DC6-A7F1-A23C1375C767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFEFD65-1B59-4DC6-A7F1-A23C1375C767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFEFD65-1B59-4DC6-A7F1-A23C1375C767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7EDA51-D236-47D1-84D8-8038285AE666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7EDA51-D236-47D1-84D8-8038285AE666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7EDA51-D236-47D1-84D8-8038285AE666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7EDA51-D236-47D1-84D8-8038285AE666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
