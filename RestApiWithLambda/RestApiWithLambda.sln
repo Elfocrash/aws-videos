@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Api", "Customers.Api\Customers.Api.csproj", "{0AE8C84B-EB00-4B5F-A7C0-DC77E06E14CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalLambda", "MinimalLambda\MinimalLambda.csproj", "{058A3378-3B7C-458C-AD96-85DE57B12E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleApi", "SimpleApi\SimpleApi.csproj", "{A6D10DA1-3C7B-4F09-9A2B-86F48200C310}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AE8C84B-EB00-4B5F-A7C0-DC77E06E14CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE8C84B-EB00-4B5F-A7C0-DC77E06E14CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE8C84B-EB00-4B5F-A7C0-DC77E06E14CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE8C84B-EB00-4B5F-A7C0-DC77E06E14CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058A3378-3B7C-458C-AD96-85DE57B12E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058A3378-3B7C-458C-AD96-85DE57B12E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058A3378-3B7C-458C-AD96-85DE57B12E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058A3378-3B7C-458C-AD96-85DE57B12E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D10DA1-3C7B-4F09-9A2B-86F48200C310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D10DA1-3C7B-4F09-9A2B-86F48200C310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D10DA1-3C7B-4F09-9A2B-86F48200C310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D10DA1-3C7B-4F09-9A2B-86F48200C310}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
