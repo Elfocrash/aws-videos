@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=nick
+      - POSTGRES_PASSWORD=chapsas
+      - POSTGRES_DB=mydb
+    ports:
+      - '5432:5432'
