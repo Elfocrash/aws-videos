@@ -1,0 +1,24 @@
+﻿{
+  "profiles": {
+    "Consumer-all": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "QUEUE_NAME": "customers"
+      }
+    },
+    "Consumer-filtered": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:5003;http://localhost:5002",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "QUEUE_NAME": "customers-filtered"
+      }
+    }
+  }
+}
