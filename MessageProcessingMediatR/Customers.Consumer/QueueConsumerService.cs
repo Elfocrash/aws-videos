@@ -13,6 +13,7 @@ public class QueueConsumerService : BackgroundService
     private readonly IOptions<QueueSettings> _queueSettings;
     private readonly ILogger<QueueConsumerService> _logger;
     private readonly IServiceScopeFactory _serviceScopeFactory;
+    private readonly Dictionary<string, Type> _messageTypes;
 
     public QueueConsumerService(IAmazonSQS sqs, IOptions<QueueSettings> queueSettings, ILogger<QueueConsumerService> logger, IServiceScopeFactory serviceScopeFactory)
     {
@@ -20,6 +21,10 @@ public class QueueConsumerService : BackgroundService
         _queueSettings = queueSettings;
         _logger = logger;
         _serviceScopeFactory = serviceScopeFactory;
+        _messageTypes = typeof(Program).Assembly.DefinedTypes
+            .Where(x =>
+                typeof(ISqsMessage).IsAssignableFrom(x) && x is { IsInterface: false, IsAbstract: false })
+            .ToDictionary(type => type.Name, type => type.AsType());
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -40,7 +45,8 @@ public class QueueConsumerService : BackgroundService
             foreach (var message in response.Messages)
             {
                 var messageType = message.MessageAttributes["MessageType"].StringValue;
-                var type = Type.GetType($"Customers.Consumer.Messages.{messageType}");
+                //var type = Type.GetType($"Customers.Consumer.Messages.{messageType}");
+                var type = _messageTypes.GetValueOrDefault(messageType);
 
                 if (type is null)
                 {
