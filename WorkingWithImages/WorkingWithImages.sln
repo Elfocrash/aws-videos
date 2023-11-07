@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Api", "Customers.Api\Customers.Api.csproj", "{EE46E1EC-5725-4629-99AB-1168038F5669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageOptimizer", "ImageOptimizer\src\ImageOptimizer\ImageOptimizer.csproj", "{DA3DF02A-56BD-4AC4-8A7D-0501388E13C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE46E1EC-5725-4629-99AB-1168038F5669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE46E1EC-5725-4629-99AB-1168038F5669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE46E1EC-5725-4629-99AB-1168038F5669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE46E1EC-5725-4629-99AB-1168038F5669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3DF02A-56BD-4AC4-8A7D-0501388E13C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3DF02A-56BD-4AC4-8A7D-0501388E13C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3DF02A-56BD-4AC4-8A7D-0501388E13C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3DF02A-56BD-4AC4-8A7D-0501388E13C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
